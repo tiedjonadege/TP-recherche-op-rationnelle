@@ -1,0 +1,41 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\YEO Nadege\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pulp\apis\..\solverdir\cbc\win\64\cbc.exe C:\PROGRA~1\KMSpico\temp\15f50539a3b9497790e91720d293822d-pulp.mps timeMode elapsed branch printingOptions all solution C:\PROGRA~1\KMSpico\temp\15f50539a3b9497790e91720d293822d-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 35 COLUMNS
+At line 168 RHS
+At line 199 BOUNDS
+At line 220 ENDATA
+Problem MODEL has 30 rows, 20 columns and 84 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 1825 - 0.00 seconds
+Cgl0003I 5 fixed, 7 tightened bounds, 2 strengthened rows, 2 substitutions
+Cgl0003I 1 fixed, 10 tightened bounds, 0 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 16 tightened bounds, 0 strengthened rows, 0 substitutions
+Cgl0004I processed model has 23 rows, 18 columns (18 integer (12 of which binary)) and 59 elements
+Cbc0006I The LP relaxation is infeasible or too expensive
+Cuts at root node changed objective from 1.79769e+308 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Linear relaxation infeasible
+
+No feasible solution found
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+

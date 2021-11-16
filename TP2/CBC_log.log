@@ -1,0 +1,91 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\YEO Nadege\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pulp\apis\..\solverdir\cbc\win\64\cbc.exe C:\PROGRA~1\KMSpico\temp\fc690a861a96486fa3b2012baf211beb-pulp.mps max timeMode elapsed branch printingOptions all solution C:\PROGRA~1\KMSpico\temp\fc690a861a96486fa3b2012baf211beb-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 67 COLUMNS
+Duplicate row C0000002 at line 170 <     X0000020  C0000002   1.000000000000e+00 >
+Duplicate row C0000041 at line 171 <     X0000020  C0000041   1.000000000000e+00 >
+Duplicate row C0000042 at line 172 <     X0000020  C0000042   1.000000000000e+00 >
+Duplicate objective at line 173 <     X0000020  OBJ        1.000000000000e+00 >
+Duplicate row C0000003 at line 237 <     X0000033  C0000003   1.000000000000e+00 >
+Duplicate row C0000052 at line 238 <     X0000033  C0000052   1.000000000000e+00 >
+Duplicate row C0000053 at line 239 <     X0000033  C0000053   1.000000000000e+00 >
+Duplicate objective at line 240 <     X0000033  OBJ        1.000000000000e+00 >
+Duplicate row C0000004 at line 264 <     X0000038  C0000004   1.000000000000e+00 >
+Duplicate row C0000046 at line 265 <     X0000038  C0000046   1.000000000000e+00 >
+Duplicate row C0000047 at line 266 <     X0000038  C0000047   1.000000000000e+00 >
+Duplicate objective at line 267 <     X0000038  OBJ        1.000000000000e+00 >
+Duplicate row C0000005 at line 301 <     X0000045  C0000005   1.000000000000e+00 >
+Duplicate row C0000026 at line 302 <     X0000045  C0000026   1.000000000000e+00 >
+Duplicate row C0000027 at line 303 <     X0000045  C0000027   1.000000000000e+00 >
+Duplicate objective at line 304 <     X0000045  OBJ        1.000000000000e+00 >
+Duplicate row C0000005 at line 358 <     X0000056  C0000005   1.000000000000e+00 >
+Duplicate row C0000038 at line 359 <     X0000056  C0000038   1.000000000000e+00 >
+Duplicate row C0000039 at line 360 <     X0000056  C0000039   1.000000000000e+00 >
+Duplicate objective at line 361 <     X0000056  OBJ        1.000000000000e+00 >
+Duplicate row C0000005 at line 405 <     X0000065  C0000005   1.000000000000e+00 >
+Duplicate row C0000049 at line 406 <     X0000065  C0000049   1.000000000000e+00 >
+Duplicate row C0000050 at line 407 <     X0000065  C0000050   1.000000000000e+00 >
+Duplicate objective at line 408 <     X0000065  OBJ        1.000000000000e+00 >
+Duplicate row C0000005 at line 417 <     X0000067  C0000005   1.000000000000e+00 >
+Duplicate row C0000051 at line 418 <     X0000067  C0000051   1.000000000000e+00 >
+Duplicate row C0000052 at line 419 <     X0000067  C0000052   1.000000000000e+00 >
+Duplicate objective at line 420 <     X0000067  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1084 <     X0000200  C0000014   1.000000000000e+00 >
+Duplicate row C0000025 at line 1085 <     X0000200  C0000025   1.000000000000e+00 >
+Duplicate row C0000026 at line 1086 <     X0000200  C0000026   1.000000000000e+00 >
+Duplicate objective at line 1087 <     X0000200  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1096 <     X0000202  C0000014   1.000000000000e+00 >
+Duplicate row C0000027 at line 1097 <     X0000202  C0000027   1.000000000000e+00 >
+Duplicate row C0000028 at line 1098 <     X0000202  C0000028   1.000000000000e+00 >
+Duplicate objective at line 1099 <     X0000202  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1108 <     X0000204  C0000014   1.000000000000e+00 >
+Duplicate row C0000029 at line 1109 <     X0000204  C0000029   1.000000000000e+00 >
+Duplicate row C0000030 at line 1110 <     X0000204  C0000030   1.000000000000e+00 >
+Duplicate objective at line 1111 <     X0000204  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1120 <     X0000206  C0000014   1.000000000000e+00 >
+Duplicate row C0000031 at line 1121 <     X0000206  C0000031   1.000000000000e+00 >
+Duplicate row C0000032 at line 1122 <     X0000206  C0000032   1.000000000000e+00 >
+Duplicate objective at line 1123 <     X0000206  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1147 <     X0000211  C0000014   1.000000000000e+00 >
+Duplicate row C0000040 at line 1148 <     X0000211  C0000040   1.000000000000e+00 >
+Duplicate row C0000041 at line 1149 <     X0000211  C0000041   1.000000000000e+00 >
+Duplicate objective at line 1150 <     X0000211  OBJ        1.000000000000e+00 >
+Duplicate row C0000014 at line 1194 <     X0000220  C0000014   1.000000000000e+00 >
+Duplicate row C0000052 at line 1195 <     X0000220  C0000052   1.000000000000e+00 >
+Duplicate row C0000053 at line 1196 <     X0000220  C0000053   1.000000000000e+00 >
+Duplicate objective at line 1197 <     X0000220  OBJ        1.000000000000e+00 >
+Duplicate row C0000015 at line 1261 <     X0000233  C0000015   1.000000000000e+00 >
+Duplicate row C0000038 at line 1262 <     X0000233  C0000038   1.000000000000e+00 >
+Duplicate row C0000039 at line 1263 <     X0000233  C0000039   1.000000000000e+00 >
+Duplicate objective at line 1264 <     X0000233  OBJ        1.000000000000e+00 >
+At line 2181 RHS
+At line 2244 BOUNDS
+Bad image at line 2265 <  LO BND       X0000020   0.000000000000e+00 >
+Bad image at line 2278 <  LO BND       X0000033   0.000000000000e+00 >
+Bad image at line 2283 <  LO BND       X0000038   0.000000000000e+00 >
+Bad image at line 2290 <  LO BND       X0000045   0.000000000000e+00 >
+Bad image at line 2301 <  LO BND       X0000056   0.000000000000e+00 >
+Bad image at line 2310 <  LO BND       X0000065   0.000000000000e+00 >
+Bad image at line 2312 <  LO BND       X0000067   0.000000000000e+00 >
+Bad image at line 2445 <  LO BND       X0000200   0.000000000000e+00 >
+Bad image at line 2447 <  LO BND       X0000202   0.000000000000e+00 >
+Bad image at line 2449 <  LO BND       X0000204   0.000000000000e+00 >
+Bad image at line 2451 <  LO BND       X0000206   0.000000000000e+00 >
+Bad image at line 2456 <  LO BND       X0000211   0.000000000000e+00 >
+Bad image at line 2465 <  LO BND       X0000220   0.000000000000e+00 >
+Bad image at line 2478 <  LO BND       X0000233   0.000000000000e+00 >
+At line 2662 ENDATA
+Problem MODEL has 62 rows, 403 columns and 820 elements
+Coin0008I MODEL read with 70 errors
+There were 70 errors on input
+Option for timeMode changed from cpu to elapsed
+** Current model not valid
+Option for printingOptions changed from normal to all
+** Current model not valid
+No match for C:\PROGRA~1\KMSpico\temp\fc690a861a96486fa3b2012baf211beb-pulp.sol - ? for list of commands
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+

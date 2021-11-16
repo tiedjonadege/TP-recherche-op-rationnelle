@@ -1,0 +1,230 @@
+################################### REPONSE ##################################
+
+######### QUESTIONS 1
+
+Variable:
+
+ variable_x = {(i, j): LpVariable(f'voiture{i}_cote_{j}', lowBound=0, cat=LpBinary) for j in M for i in N}
+ variable_t = {i: LpVariable(f'cote_{i}', lowBound=0) for i in M}
+ T = LpVariable('max', lowBound=0)
+
+
+fonction objective:
+ prob += T, 'maximum'
+
+
+contraintes:
+ for j in M:
+        prob += (T >= variable_t[j]), f'minmax_{j}',
+
+    for j in M:
+        prob += (variable_t[j] == lpSum(lamda[i] * variable_x[(i, j)] for i in N)), f'cote_{j}',
+
+    for i in N:
+        prob += (lpSum(variable_x[(i, j)] for j in M) == 1.0), f'affectation_con_{i}',
+
+
+----------------------------------------
+Stats
+----------------------------------------
+
+Number variables: 33
+Number constraints: 19
+
+Time:
+- (real) 0.3513815402984619
+- (CPU) 0.35899999999674037
+
+Objective value: 27.1
+
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=27.1
+ligne 0
+cote droit
+4
+5
+6
+9
+11
+12
+14
+15
+ligne 1
+cote gauche
+1
+2
+3
+7
+8
+10
+13
+
+
+############### QUESTION 2 et 3
+
+on ajoute les variables variable_y et variable_z et les paramètres bigM, epsilon; 
+
+
+########Question2-a
+contrainte:
+    prob += (variable_t[1] <= 20.0), f'coteborne',
+
+valeur:
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=34.1
+ligne 0
+cote droit
+3
+4
+6
+7
+8
+9
+11
+12
+13
+15
+ligne 1
+cote gauche
+1
+2
+5
+10
+14
+
+
+
+#######Question2-b
+
+contrainte:
+    for j in M:
+        prob += ( variable_t[j] <= 16 - epsilon + (bigM * (1 - variable_z[j]))),f'const_z_{j}',
+        prob += (lpSum(variable_z[j])==1.0),f'const_z_i_{j}',
+
+valeur:
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=38.100001
+ligne 0
+cote droit
+3
+8
+11
+12
+15
+ligne 1
+cote gauche
+1
+2
+4
+5
+6
+7
+9
+10
+13
+14
+
+
+########Question2-c
+contrainte:
+    for i in N:
+         prob += (lamda[i] * variable_x[(i, 0)] <= 4.0), f'voiture_D_con_{i}',
+
+valeur:
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=27.2
+ligne 0
+cote droit
+1
+5
+7
+8
+9
+12
+13
+15
+ligne 1
+cote gauche
+2
+3
+4
+6
+10
+11
+14
+
+
+####### Question2-d
+contrainte:
+    for j in M:
+      prob += 10 + epsilon - (bigM * variable_y[j]) <= variable_t[1], f'BigMun_{j}'
+      prob += 10 + (bigM * (1-variable_y[j])) >= variable_t[1], f'BigMdeux_{j}'
+      prob += 13 - epsilon - (bigM * variable_y[j]) >= variable_t[0], f'BigMtrois_{j}'
+
+valeur:
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=41.2
+ligne 0
+cote droit
+5
+8
+9
+13
+ligne 1
+cote gauche
+1
+2
+3
+4
+6
+7
+10
+11
+12
+14
+15
+
+########### REMARQUE:
+           les 4 dernières conditions ne peuvent ètre satisfaites simultanément
+           le solver essaie de satisfaire au mieux ces conditions
+
+resultat:
+----------------------------------------
+Variables' values
+----------------------------------------
+
+minmaxobj=34.1
+ligne 0
+cote droit
+1
+2
+4
+5
+6
+8
+10
+11
+14
+ligne 1
+cote gauche
+3
+7
+9
+12
+15
+

@@ -1,0 +1,6 @@
+    for i in range(N):
+     prob += lpSum(lamda[i] * variable_x[(i, 1)]) <= 20, f'cote gauche_{i}'
+
+    for i in range(N):
+        for j in range(M):
+            prob += lamda[i] * variable_x[(i, j)] <= 4, f'voiture_D_con_{(i,j)}',

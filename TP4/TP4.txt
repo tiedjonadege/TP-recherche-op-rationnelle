@@ -1,0 +1,47 @@
+  
+lpSum(
+        variable_fi[(i, j)] for i in M for j in M if (li[i], li[j]) in list(G.edges))
+
+    for j in M:
+        if (li[0], li[j]) in list(G.edges):
+            probmin += lpSum(variable_fi[(0, j)]) == 1, f'starter{j}',
+
+    for i in M:
+        if (li[i], li[M[-1]]) in list(G.edges):
+            probmin += lpSum(variable_fi[(i, M[-1])]) == 1, f'target{i}',
+
+    for u in M:
+        for i in M:
+            if (li[i], li[M[u]]) in list(G.edges):
+
+    for u in M:
+        for j in M:
+            if (li[u], li[M[j]]) in list(G.edges):
+                probmin += lpSum(variable_fi[(u, j)]) <= 1, f'inter_sort{u}_{j}',
+                probmin += lpSum(variable_fi[(i, u)]) <= 1, f'inter_ren_{i}_{u}',
+
+
+    A= {}
+    for i in M:
+        for j in M:
+            if (li[i], li[j]) in list(G.edges):
+                A[(i, j)] = 1
+            else:
+                if (li[j], li[i]) in list(G.edges):
+                    A[(i, j)] = -1
+
+print(A)
+
+# QUESTION  6
+    for i in (M[1:-1]):
+        for j in M:
+            if (li[i], li[j]) in list(G.edges):
+                probmax += (pos[i] <= BigM * lpSum(variable_y[(i, j)])), f'posion_min_{(i, j)}',
+
+
+ probmin += posit[0] == 1, f'posit_initial',
+
+
+ for (u,v) in num_arc:
+           if arc == 1 :
+             print(f' arc {li[u],li[v]}')
